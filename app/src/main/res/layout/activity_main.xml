@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/setBtnTxtV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Press the button to set the date"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/setDateBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setBtnTxtV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="setDate"
+        android:text="SET DATE" />
+
+    <TextView
+        android:id="@+id/outputTxtV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setDateBtn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="66dp"
+        android:text="The Date is: "
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/resultTxtV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/outputTxtV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:text="" />
+
+</RelativeLayout>
